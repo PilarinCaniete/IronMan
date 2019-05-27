@@ -2,4 +2,5 @@ numpy==1.16.*
 scipy==1.2.*
 matplotlib==3.*
 pandas==0.24.*
+jupyterlab==0.35.*
 ipympl==0.*
