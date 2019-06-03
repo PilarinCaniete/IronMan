@@ -37,7 +37,7 @@ def Read(filename):
 def temperature(filename):
     df = Read(filename)
 
-    return round(df['Temp_mean'].mean(), 2)
+    return df['Temp_mean'].mean()
 
 
 
@@ -80,12 +80,12 @@ def Labels(ax, X=' ', Y=' ', figura=''):
     ax.axes.tick_params(axis='both', which='minor', length=2.5, width=1)
     ax.minorticks_on()
 
-    #Labels
+    # Labels
     ax.set_xlabel(X)
     ax.set_ylabel(Y)
     ax.legend()
 
-    #Titles
+    # Titles
     plt.suptitle('Figure '+figura)
     plt.subplots_adjust(top=0.93)
 
